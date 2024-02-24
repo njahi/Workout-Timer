@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const [time, setTime] = useState(formatTime(newDate()));
@@ -11,6 +11,13 @@ function App() {
       second: "2-digit",
     }).format(date);
   }
+  useEffect(function () {
+    const id = setInterval(function () {
+      setTime(formatTime(new Date()));
+    }, 1000);
+
+    return () => clearInterval(id);
+  }, []);
   return (
     <main>
       <h1>WorkOut Timer</h1>
