@@ -21,6 +21,7 @@ function App() {
   return (
     <main>
       <h1>WorkOut Timer</h1>
+      <time>For your workout on {time}</time>
     </main>
   );
 }
