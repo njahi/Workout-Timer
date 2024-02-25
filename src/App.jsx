@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 function App() {
-  const [time, setTime] = useState(formatTime(newDate()));
+  const [time, setTime] = useState(formatTime(new Date()));
   function formatTime(date) {
     return new Intl.DateTimeFormat("en", {
       month: "short",
