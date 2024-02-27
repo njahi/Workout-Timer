@@ -27,3 +27,17 @@ main {
     0px 22.3px 22.3px rgba(0, 0, 0, 0.06),
     0px 41.8px 41.8px rgba(0, 0, 0, 0.072), 0px 100px 100px rgba(0, 0, 0, 0.1);
 }
+time {
+  display: block;
+  width: 36rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  background-color: #e7e7e7;
+  border-radius: 9px;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #4a9fee;
+  text-transform: uppercase;
+}
