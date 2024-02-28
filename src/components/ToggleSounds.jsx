@@ -1,4 +1,5 @@
-import { useState } from "react";
+/* eslint-disable react-refresh/only-export-components */
+import { memo, useState } from "react";
 
 /* eslint-disable react/prop-types */
 function ToggleSounds() {
@@ -12,4 +13,4 @@ function ToggleSounds() {
   );
 }
 
-export default ToggleSounds;
+export default memo(ToggleSounds);
