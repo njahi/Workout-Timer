@@ -18,6 +18,7 @@ function App() {
 
     return () => clearInterval(id);
   }, []);
+  const partOfDay = time.slice(-2);
   const workouts = [
     {
       name: "Full-body workout",
