@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import ToggleSounds from "./components/ToggleSounds";
 
 function App() {
-  const [allowSound, setAllowSound] = useState(true);
   const [time, setTime] = useState(formatTime(new Date()));
   function formatTime(date) {
     return new Intl.DateTimeFormat("en", {
@@ -47,10 +46,7 @@ function App() {
     <main>
       <h1>WorkOut Timer</h1>
       <time>For your workout on {time}</time>
-      <ToggleSounds
-        allowSound={allowSound}
-        setAllowSound={setAllowSound}
-      />
+      <ToggleSounds />
     </main>
   );
 }

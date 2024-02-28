@@ -1,5 +1,8 @@
+import { useState } from "react";
+
 /* eslint-disable react/prop-types */
-function ToggleSounds({ allowSound, setAllowSound }) {
+function ToggleSounds() {
+  const [allowSound, setAllowSound] = useState(true);
   return (
     <button
       className='btn-sound'
