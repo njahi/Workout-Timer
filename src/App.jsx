@@ -1,17 +1,19 @@
 import { useState, useEffect } from "react";
 import ToggleSounds from "./components/ToggleSounds";
 
+function formatTime(date) {
+  return new Intl.DateTimeFormat("en", {
+    month: "short",
+    year: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+  }).format(date);
+}
+
 function App() {
   const [time, setTime] = useState(formatTime(new Date()));
-  function formatTime(date) {
-    return new Intl.DateTimeFormat("en", {
-      month: "short",
-      year: "2-digit",
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
-    }).format(date);
-  }
+
   useEffect(function () {
     const id = setInterval(function () {
       setTime(formatTime(new Date()));
