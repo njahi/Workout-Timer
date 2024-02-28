@@ -18,6 +18,28 @@ function App() {
 
     return () => clearInterval(id);
   }, []);
+  const workouts = [
+    {
+      name: "Full-body workout",
+      numExercises: partOfDay === "AM" ? 9 : 8,
+    },
+    {
+      name: "Arms + Legs",
+      numExercises: 6,
+    },
+    {
+      name: "Arms only",
+      numExercises: 3,
+    },
+    {
+      name: "Legs only",
+      numExercises: 4,
+    },
+    {
+      name: "Core only",
+      numExercises: partOfDay === "AM" ? 5 : 4,
+    },
+  ];
   return (
     <main>
       <h1>WorkOut Timer</h1>
