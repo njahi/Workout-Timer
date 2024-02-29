@@ -53,7 +53,7 @@ function App() {
       <h1>WorkOut Timer</h1>
       <time>For your workout on {time}</time>
       <ToggleSounds />
-      <Calculator />
+      <Calculator workouts={workouts} />
     </main>
   );
 }
