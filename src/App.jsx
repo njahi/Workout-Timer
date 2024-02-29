@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import ToggleSounds from "./components/ToggleSounds";
+import Calculator from "./components/Calculator";
 
 function formatTime(date) {
   return new Intl.DateTimeFormat("en", {
@@ -52,6 +53,7 @@ function App() {
       <h1>WorkOut Timer</h1>
       <time>For your workout on {time}</time>
       <ToggleSounds />
+      <Calculator />
     </main>
   );
 }
