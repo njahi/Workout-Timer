@@ -45,7 +45,7 @@ function App() {
         numExercises: partOfDay === "AM" ? 5 : 4,
       },
     ];
-  }, []);
+  }, [partOfDay]);
 
   return (
     <main>
