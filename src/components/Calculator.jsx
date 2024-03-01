@@ -6,6 +6,10 @@ function Calculator({ workouts }) {
   const [sets, setSets] = useState(3);
   const [speed, setSpeed] = useState(90);
   const [duration, setDuration] = useState(5);
-  return <div>Calculator</div>;
+  return (
+    <>
+      <form></form>
+    </>
+  );
 }
 export default memo(Calculator);
