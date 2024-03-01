@@ -5,7 +5,8 @@ function Calculator({ workouts }) {
   const [number, setNumber] = useState(workouts.at(0).numExercises);
   const [sets, setSets] = useState(3);
   const [speed, setSpeed] = useState(90);
-  const [duration, setDuration] = useState(5);
+  const [durationBreak, setDurationBreak] = useState(5);
+  const [duration, setDuration] = usestate(0);
   return (
     <>
       <form></form>
