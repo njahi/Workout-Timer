@@ -83,3 +83,12 @@ form {
   gap: 3rem;
   margin-bottom: 4rem;
 }
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  background-color: #e7e7e7;
+  border-radius: 9px;
+  padding: 1.6rem;
+}
