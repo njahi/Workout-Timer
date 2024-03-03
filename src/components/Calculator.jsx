@@ -15,7 +15,11 @@ function Calculator({ workouts }) {
   );
   return (
     <>
-      <form></form>\<footer></footer>
+      <form></form>\
+      <section>
+        <button>-</button>
+        <button>+</button>
+      </section>
     </>
   );
 }
