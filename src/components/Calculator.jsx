@@ -18,6 +18,7 @@ function Calculator({ workouts }) {
       <form></form>\
       <section>
         <button>-</button>
+        <p>{mins}</p>
         <button>+</button>
       </section>
     </>
