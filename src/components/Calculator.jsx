@@ -23,7 +23,7 @@ function Calculator({ workouts }) {
       <section>
         <button>-</button>
         <p>{mins}</p>
-        <button>+</button>
+        <button onClick={handleInc}>+</button>
       </section>
     </>
   );
