@@ -18,7 +18,7 @@ function Calculator({ workouts }) {
     setDuration((duration) => Math.floor(duration) + 1);
   }
   function handleDecr() {
-    setDuration((duration) => Math.floor(duration) - 1);
+    setDuration((duration) => (duration > 1 ? Math.floor(duration) - 1 : 0));
   }
   return (
     <>
