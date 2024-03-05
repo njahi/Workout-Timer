@@ -14,6 +14,9 @@ function Calculator({ workouts }) {
     },
     [number, sets, speed, durationBreak]
   );
+  function handleInc() {
+    setDuration((duration) => Math.floor(duration) + 1);
+  }
   return (
     <>
       <form></form>\
