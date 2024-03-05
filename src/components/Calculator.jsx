@@ -17,6 +17,9 @@ function Calculator({ workouts }) {
   function handleInc() {
     setDuration((duration) => Math.floor(duration) + 1);
   }
+  function handleDecr() {
+    setDuration((duration) => Math.floor(duration) - 1);
+  }
   return (
     <>
       <form></form>\
