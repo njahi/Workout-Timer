@@ -8,6 +8,7 @@ function Calculator({ workouts }) {
   const [durationBreak, setDurationBreak] = useState(5);
   const [duration, setDuration] = useState(0);
   const mins = Math.floor(duration);
+  const seconds = (duration - mins) * 60;
   useEffect(
     function () {
       setDuration((number * sets * speed) / 60 + (sets - 1) * durationBreak);
@@ -22,7 +23,7 @@ function Calculator({ workouts }) {
   }
   return (
     <>
-      <form></form>\
+      <form></form>
       <section>
         <button onClick={handleDecr}>-</button>
         <p>{mins}</p>
