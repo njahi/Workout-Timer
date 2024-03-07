@@ -26,9 +26,12 @@ function Calculator({ workouts }) {
       <form></form>
       <section>
         <button onClick={handleDecr}>-</button>
-        <p>{mins < 10 && "0"}</p>
-        {mins} : {seconds < 10 && "0"}
-        {seconds}
+        <p>
+          {mins < 10 && "0"}
+          {mins} : {seconds < 10 && "0"}
+          {seconds}
+        </p>
+
         <button onClick={handleInc}>+</button>
       </section>
     </>
