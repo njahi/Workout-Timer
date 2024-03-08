@@ -92,3 +92,11 @@ section {
   border-radius: 9px;
   padding: 1.6rem;
 }
+p {
+  font-size: 6rem;
+  font-weight: 900;
+  text-align: center;
+  background-clip: text;
+  background-image: linear-gradient(to right bottom, #80dfe1, #4e7afa);
+  color: transparent;
+}
