@@ -56,6 +56,7 @@ function Calculator({ workouts }) {
             value={speed}
             onChange={(e) => setSpeed(e.target.value)}
           />
+          <span>{speed} sec/exercise</span>
         </div>
       </form>
       <section>
