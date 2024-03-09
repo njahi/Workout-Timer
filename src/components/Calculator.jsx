@@ -47,6 +47,16 @@ function Calculator({ workouts }) {
           />
           <span>{sets}</span>
         </div>
+        <div>
+          <label>How fast are you?</label>
+          <input
+            type='range'
+            min='30'
+            max='180'
+            value={speed}
+            onChange={(e) => setSpeed(e.target.value)}
+          />
+        </div>
       </form>
       <section>
         <button onClick={handleDecr}>-</button>
