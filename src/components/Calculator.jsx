@@ -38,7 +38,10 @@ function Calculator({ workouts }) {
         </div>
         <div>
           <label>How many sets?</label>
-          <input type />
+          <input
+            value={sets}
+            onChange={(e) => setSets(e.target.value)}
+          />
         </div>
       </form>
       <section>
