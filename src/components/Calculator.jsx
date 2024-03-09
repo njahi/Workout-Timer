@@ -45,6 +45,7 @@ function Calculator({ workouts }) {
             value={sets}
             onChange={(e) => setSets(e.target.value)}
           />
+          <span>{sets}</span>
         </div>
       </form>
       <section>
