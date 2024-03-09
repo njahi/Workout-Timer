@@ -27,9 +27,13 @@ function Calculator({ workouts }) {
         <div>
           <label>Type of workout</label>
           <select>
-            {workouts.map((workout) => {
-              <option key={workout.name}></option>;
-            })}
+            {workouts.map((workout) => (
+              <option
+                value={workout.numExercises}
+                key={workout.name}>
+                {workout.name} ({workout.numExercises} exercises)
+              </option>
+            ))}
           </select>
         </div>
       </form>
