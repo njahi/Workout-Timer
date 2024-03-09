@@ -26,7 +26,11 @@ function Calculator({ workouts }) {
       <form>
         <div>
           <label>Type of workout</label>
-          <select></select>
+          <select>
+            {workouts.map((workout) => {
+              <option key={workout.name}></option>;
+            })}
+          </select>
         </div>
       </form>
       <section>
