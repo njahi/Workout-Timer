@@ -36,6 +36,10 @@ function Calculator({ workouts }) {
             ))}
           </select>
         </div>
+        <div>
+          <label>How many sets?</label>
+          <input type />
+        </div>
       </form>
       <section>
         <button onClick={handleDecr}>-</button>
