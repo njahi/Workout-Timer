@@ -105,3 +105,9 @@ p {
   background-image: linear-gradient(to right bottom, #80dfe1, #4e7afa);
   color: transparent;
 }
+label {
+  font-weight: 500;
+  font-size: 2.4rem;
+  display: block;
+  width: 20rem;
+}
