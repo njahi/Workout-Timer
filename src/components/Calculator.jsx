@@ -39,6 +39,9 @@ function Calculator({ workouts }) {
         <div>
           <label>How many sets?</label>
           <input
+            type='range'
+            min='30'
+            max='5'
             value={sets}
             onChange={(e) => setSets(e.target.value)}
           />
