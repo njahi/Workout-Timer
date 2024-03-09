@@ -23,7 +23,12 @@ function Calculator({ workouts }) {
   }
   return (
     <>
-      <form></form>
+      <form>
+        <div>
+          <label>Type of workout</label>
+          <select></select>
+        </div>
+      </form>
       <section>
         <button onClick={handleDecr}>-</button>
         <p>
