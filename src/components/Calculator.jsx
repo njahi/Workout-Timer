@@ -67,6 +67,7 @@ function Calculator({ workouts }) {
             value={durationBreak}
             onChange={(e) => setDurationBreak(e.target.value)}
           />
+          <span>{durationBreak} mins/break</span>
         </div>
       </form>
       <section>
