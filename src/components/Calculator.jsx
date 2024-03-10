@@ -58,6 +58,10 @@ function Calculator({ workouts }) {
           />
           <span>{speed} sec/exercise</span>
         </div>
+        <div>
+          <label>Break Length</label>
+          <input type='range' />
+        </div>
       </form>
       <section>
         <button onClick={handleDecr}>-</button>
