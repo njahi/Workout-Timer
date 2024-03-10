@@ -62,6 +62,8 @@ function Calculator({ workouts }) {
           <label>Break Length</label>
           <input
             type='range'
+            min='1'
+            max='10'
             value={durationBreak}
             onChange={(e) => setDurationBreak(e.target.value)}
           />
