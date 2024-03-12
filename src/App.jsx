@@ -13,6 +13,7 @@ function formatTime(date) {
 }
 
 function App() {
+  const [allowSound, setAllowSound] = useState(true);
   const [time, setTime] = useState(formatTime(new Date()));
 
   useEffect(function () {
@@ -52,7 +53,7 @@ function App() {
     <main>
       <h1>WorkOut Timer</h1>
       <time>For your workout on {time}</time>
-      <ToggleSounds />
+      <ToggleSounds allowSound={allowSound} />
       <Calculator workouts={workouts} />
     </main>
   );
