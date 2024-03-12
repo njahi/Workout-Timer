@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react-refresh/only-export-components */
 import { memo, useEffect, useState } from "react";
+import clicksound from "./clickSound.m4a";
 function Calculator({ workouts, allowSound }) {
   const [number, setNumber] = useState(workouts.at(0).numExercises);
   const [sets, setSets] = useState(3);
@@ -15,9 +16,17 @@ function Calculator({ workouts, allowSound }) {
     },
     [number, sets, speed, durationBreak]
   );
-  useEffect(function () {
-    const playSound = function () {};
-  });
+  useEffect(
+    function () {
+      const playSound = function () {
+        if (!allowSound) return;
+        const sound = new Audio(clicksound);
+        sound.play();
+      };
+      playSound();
+    },
+    [duration, allowSound]
+  );
   function handleInc() {
     setDuration((duration) => Math.floor(duration) + 1);
   }
