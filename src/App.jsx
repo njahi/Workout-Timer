@@ -53,7 +53,10 @@ function App() {
     <main>
       <h1>WorkOut Timer</h1>
       <time>For your workout on {time}</time>
-      <ToggleSounds allowSound={allowSound} />
+      <ToggleSounds
+        allowSound={allowSound}
+        setAllowSound={setAllowSound}
+      />
       <Calculator
         workouts={workouts}
         allowSound={allowSound}

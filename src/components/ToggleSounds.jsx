@@ -2,7 +2,7 @@
 import { memo, useState } from "react";
 
 /* eslint-disable react/prop-types */
-function ToggleSounds({ allowSound }) {
+function ToggleSounds({ allowSound, setAllowSound }) {
   return (
     <button
       className='btn-sound'
