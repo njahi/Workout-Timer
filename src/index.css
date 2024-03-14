@@ -86,7 +86,8 @@ form {
 form div {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  //2rem
+  gap: 2.1rem;
 }
 section {
   display: flex;
