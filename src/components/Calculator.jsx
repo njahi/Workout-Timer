@@ -15,17 +15,17 @@ function Calculator({ workouts, allowSound }) {
     },
     [number, sets, speed, durationBreak]
   );
-  useEffect(
-    function () {
-      const playSound = function () {
-        if (!allowSound) return;
-        const sound = new Audio(clicksound);
-        sound.play();
-      };
-      playSound();
-    },
-    [duration, allowSound]
-  );
+  // useEffect(
+  //   function () {
+  //     const playSound = function () {
+  //       if (!allowSound) return;
+  //       const sound = new Audio(clicksound);
+  //       sound.play();
+  //     };
+  //     playSound();
+  //   },
+  //   [duration, allowSound]
+  // );
   function handleInc() {
     setDuration((duration) => Math.floor(duration) + 1);
   }
